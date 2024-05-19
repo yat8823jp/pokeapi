@@ -1,0 +1,26 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap' );
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Noto Serif JP', Georgia, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+	background-color: #fafcd0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+a,
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}

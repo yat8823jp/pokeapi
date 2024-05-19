@@ -1,0 +1,15 @@
+@use "mixin";
+
+.u-display-sp {
+	display: block;
+	@include mixin.breakpoint ( pc ) {
+		display: none;
+	}
+}
+
+.u-display-pc {
+	display: none;
+	@include mixin.breakpoint ( pc ) {
+		display: block;
+	}
+}
