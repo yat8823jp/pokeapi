@@ -5,5 +5,5 @@ import '/assets/scss/style.scss';
 
 document.addEventListener( 'DOMContentLoaded', () => {
 	index();
-	console.log( pokeapi() );
+	pokeapi();
 } )

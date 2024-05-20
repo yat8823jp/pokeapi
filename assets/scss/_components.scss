@@ -1,0 +1,15 @@
+.c-inner {
+	padding: 16px;
+	max-width: 960px;
+	margin: auto;
+}
+
+.c-result {
+	display: flex;
+	&__title {
+		margin-right: 8px;
+	}
+	&__body {
+
+	}
+}

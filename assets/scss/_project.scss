@@ -1,0 +1,14 @@
+.p-search {
+	margin-bottom: 8px;
+	&__input {
+		padding: 8px;
+		border: 1px solid #eee;
+		background: #fff;
+		border-radius: 4px;
+	}
+	&__submit {
+		padding: 8px;
+		color: #fff;
+		background: #18a0d1;
+	}
+}
