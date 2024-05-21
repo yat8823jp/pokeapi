@@ -30,25 +30,20 @@ async function get_pokemon_japanese_name( get_english_name ) {
 
 async function get_pokemon_english_name( get_japanese_name ) {
 	try {
-		const response = await fetch( BASE_URL + `pokemon-species/${ get_japanese_name }` );
+		const response = await fetch( `./assets/json/list.json` );
 		if ( ! response.ok ) {
-			throw new Error( "Japanese name acquisition error" );
+			throw new Error( "Read error for json file" );
 		}
-		const data = await response.json();
-		console.log(data);
-		for( let index in data.names ) {
-			const language = data.names[index]['language']['name'];
-			const set_english_name = data.names[index]['name'];
-			if ( language == 'en' ) {
-				result_jp.textContent = set_english_name;
-				return set_english_name;
-			} else {
-				return 'Not Found English name';
-			}
-		}
+		const pokemon_list = await response.json();
+		const key = "ja-Hrkt";
+		const name_list = () => {
+			const pokemon_index = pokemon_list.findIndex( data => data["ja-Hrkt"] === get_japanese_name );
+			return pokemon_list[ pokemon_index ];
+		};
+		const pokemon_name = name_list( get_japanese_name );
+		result_jp.textContent =  pokemon_name.en;
 	} catch ( error ) {
-		result_jp.textContent = 'Not Found English name';
-		console.error( "There has been a problem with your fetch operation:", error );
+		console.error( "Read error for json file" );
 	}
 }
 
