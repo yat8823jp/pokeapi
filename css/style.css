@@ -25,6 +25,7 @@ button:hover {
 
 h1 {
   font-size: 32px;
+  font-weight: bold;
 }
 
 header {
@@ -44,8 +45,15 @@ header {
 .c-result__title {
   margin-right: 8px;
 }
+hr {
+  margin: 60px 0;
+}
+
 .p-search {
   margin-bottom: 8px;
+}
+.p-search__label {
+  line-height: 2.4;
 }
 .p-search__input {
   padding: 8px;
