@@ -1,5 +1,8 @@
 .p-search {
 	margin-bottom: 8px;
+	&__label {
+		line-height: 2.4;
+	}
 	&__input {
 		padding: 8px;
 		border: 1px solid #eee;

@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
 /* font-size */
 html {
   scroll-behavior: smooth;
@@ -9,7 +8,7 @@ body {
   min-width: 320px;
   width: 100%;
   overflow-x: hidden;
-  font-family: "Noto Serif JP", Georgia, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+  font-family: "Noto Sans JP", sans-serif;
   background-color: #fafcd0;
 }
 
@@ -24,6 +23,15 @@ button:hover {
   cursor: pointer;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+header {
+  margin-bottom: 32px;
+  display: block;
+}
+
 .c-inner {
   padding: 16px;
   max-width: 960px;
@@ -36,6 +44,21 @@ button:hover {
 .c-result__title {
   margin-right: 8px;
 }
+.p-search {
+  margin-bottom: 8px;
+}
+.p-search__input {
+  padding: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 4px;
+}
+.p-search__submit {
+  padding: 8px;
+  color: #fff;
+  background: #18a0d1;
+}
+
 .u-display-sp {
   display: block;
 }

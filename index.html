@@ -6,19 +6,22 @@
 		<title>poke</title>
 	</head>
 	<body id="top">
-		<main>
-			<div class="c-inner">
+		<div class="c-inner">
+			<header>
+				<h1>Pokemon name English -> Japanese</h1>
+			</header>
+			<main>
 				<div action="" class="p-search">
-					<label for="pokemon_name">ポケモンの英語名を入力：</label>
+					<label for="pokemon_name" class="p-search__label">ポケモンの英語名を入力：</label>
 					<input type="text" value="" name="pokemon_name" id="pokemon_name" class="p-search__input">
 					<input type="submit" value="検 索" class="p-search__submit js-submit">
-				</form>
+				</div>
 				<dl class="c-result">
 					<dt class="c-result__title">日本語名:</dt>
 					<dd class="c-result__body"><p id="result"></p></dd>
 				</dl>
-			</div>
-		</main>
+			</main>
+		</div>
 		<div id="app"></div>
 		<script type="module" src="/assets/js/main.js"></script>
 	</body>
