@@ -8,31 +8,21 @@
 	<body id="top">
 		<div class="c-inner">
 			<header>
-				<h1>Pokemon name English convert Japanese</h1>
+				<h1>Pokemon data search</h1>
 			</header>
 			<main>
 				<div action="" class="p-search">
-					<label for="pokemon_name_en" class="p-search__label">English Name：</label>
-					<input type="text" value="" name="pokemon_name_en" id="pokemon_name_en" class="p-search__input">
-					<input type="submit" value="検 索" class="p-search__submit js-submit_en">
-				</div>
-				<dl class="c-result">
-					<dt class="c-result__title">日本語名:</dt>
-					<dd class="c-result__body"><p id="result_en"></p></dd>
-				</dl>
-				<hr>
-				<div action="" class="p-search">
 					<label for="pokemon_name_jp" class="p-search__label">日本語名：</label>
 					<input type="text" value="" name="pokemon_name_jp" id="pokemon_name_jp" class="p-search__input">
-					<input type="submit" value="検 索" class="p-search__submit js-submit_jp">
+					<input type="submit" value="検 索" class="p-search__submit js-submit">
 				</div>
 				<dl class="c-result">
 					<dt class="c-result__title">English name:</dt>
-					<dd class="c-result__body"><p id="result_jp"></p></dd>
+					<dd class="c-result__body"><p id="result"></p></dd>
 				</dl>
+				<div id="app"></div>
 			</main>
 		</div>
-		<div id="app"></div>
 		<script type="module" src="/assets/js/main.js"></script>
 	</body>
 </html>
